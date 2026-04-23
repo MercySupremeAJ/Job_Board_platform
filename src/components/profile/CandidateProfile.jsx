@@ -91,11 +91,51 @@ const CandidateProfile = () => {
             <div className="profile-form-grid-2" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'var(--space-4)' }}>
               <div>
                 <label style={{ display: 'block', fontSize: 'var(--text-sm)', color: 'var(--color-text-secondary)', marginBottom: 'var(--space-2)' }}>Title</label>
-                <input type="text" value={formData.title} onChange={(e) => updateField('title', e.target.value)} placeholder="e.g. Frontend Developer" />
+                <select value={formData.title} onChange={(e) => updateField('title', e.target.value)}>
+                  <option value="">Select your title</option>
+                  <option value="Frontend Developer">Frontend Developer</option>
+                  <option value="Backend Developer">Backend Developer</option>
+                  <option value="Full Stack Developer">Full Stack Developer</option>
+                  <option value="Mobile Developer">Mobile Developer</option>
+                  <option value="DevOps Engineer">DevOps Engineer</option>
+                  <option value="Data Scientist">Data Scientist</option>
+                  <option value="Data Analyst">Data Analyst</option>
+                  <option value="Machine Learning Engineer">Machine Learning Engineer</option>
+                  <option value="UI/UX Designer">UI/UX Designer</option>
+                  <option value="Product Manager">Product Manager</option>
+                  <option value="QA Engineer">QA Engineer</option>
+                  <option value="Cloud Engineer">Cloud Engineer</option>
+                  <option value="Cybersecurity Analyst">Cybersecurity Analyst</option>
+                  <option value="Technical Writer">Technical Writer</option>
+                  <option value="Engineering Manager">Engineering Manager</option>
+                  <option value="Software Engineer">Software Engineer</option>
+                  <option value="iOS Developer">iOS Developer</option>
+                  <option value="Android Developer">Android Developer</option>
+                  <option value="Blockchain Developer">Blockchain Developer</option>
+                  <option value="Site Reliability Engineer">Site Reliability Engineer</option>
+                  <option value="Other">Other</option>
+                </select>
               </div>
               <div>
                 <label style={{ display: 'block', fontSize: 'var(--text-sm)', color: 'var(--color-text-secondary)', marginBottom: 'var(--space-2)' }}>Location</label>
-                <input type="text" value={formData.location} onChange={(e) => updateField('location', e.target.value)} placeholder="e.g. Lagos, Nigeria" />
+                <select value={formData.location} onChange={(e) => updateField('location', e.target.value)}>
+                  <option value="">Select your location</option>
+                  <option value="Lagos, Nigeria">Lagos, Nigeria</option>
+                  <option value="Abuja, Nigeria">Abuja, Nigeria</option>
+                  <option value="Port Harcourt, Nigeria">Port Harcourt, Nigeria</option>
+                  <option value="Accra, Ghana">Accra, Ghana</option>
+                  <option value="Nairobi, Kenya">Nairobi, Kenya</option>
+                  <option value="Cape Town, South Africa">Cape Town, South Africa</option>
+                  <option value="Johannesburg, South Africa">Johannesburg, South Africa</option>
+                  <option value="Kigali, Rwanda">Kigali, Rwanda</option>
+                  <option value="Cairo, Egypt">Cairo, Egypt</option>
+                  <option value="Kampala, Uganda">Kampala, Uganda</option>
+                  <option value="Dar es Salaam, Tanzania">Dar es Salaam, Tanzania</option>
+                  <option value="Addis Ababa, Ethiopia">Addis Ababa, Ethiopia</option>
+                  <option value="Remote - Africa">Remote - Africa</option>
+                  <option value="Remote - Worldwide">Remote - Worldwide</option>
+                  <option value="Other">Other</option>
+                </select>
               </div>
             </div>
             <div>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="50%" stop-color="#A78BFA"/>
+      <stop offset="100%" stop-color="#C084FC"/>
+    </linearGradient>
+    <linearGradient id="a" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#FCD34D"/>
+    </linearGradient>
+  </defs>
+  <!-- Globe circle -->
+  <circle cx="32" cy="32" r="30" fill="url(#g)" opacity="0.15" stroke="url(#g)" stroke-width="2"/>
+  <!-- Africa silhouette (simplified) -->
+  <path d="M30 12 L33 12 L35 16 L38 18 L39 22 L38 26 L40 30 L39 34 L37 38 L36 42 L34 46 L32 50 L30 48 L28 44 L26 40 L25 36 L26 32 L25 28 L26 24 L28 20 L29 16 Z" fill="url(#a)" opacity="0.9"/>
+  <!-- Meridian lines -->
+  <ellipse cx="32" cy="32" rx="14" ry="30" fill="none" stroke="url(#g)" stroke-width="1" opacity="0.3"/>
+  <line x1="2" y1="32" x2="62" y2="32" stroke="url(#g)" stroke-width="1" opacity="0.3"/>
+</svg>

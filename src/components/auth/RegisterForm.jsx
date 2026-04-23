@@ -215,11 +215,54 @@ const RegisterForm = () => {
               <>
                 <div>
                   <label htmlFor="reg-title" style={{ display: 'block', fontSize: 'var(--text-sm)', color: 'var(--color-text-secondary)', marginBottom: 'var(--space-2)' }}>Professional Title</label>
-                  <input id="reg-title" type="text" value={formData.title} onChange={(e) => updateField('title', e.target.value)} placeholder="e.g. Frontend Developer" />
+                  <select id="reg-title" value={formData.title} onChange={(e) => updateField('title', e.target.value)}>
+                    <option value="">Select your title</option>
+                    <option value="Frontend Developer">Frontend Developer</option>
+                    <option value="Backend Developer">Backend Developer</option>
+                    <option value="Full Stack Developer">Full Stack Developer</option>
+                    <option value="Mobile Developer">Mobile Developer</option>
+                    <option value="DevOps Engineer">DevOps Engineer</option>
+                    <option value="Data Scientist">Data Scientist</option>
+                    <option value="Data Analyst">Data Analyst</option>
+                    <option value="Machine Learning Engineer">Machine Learning Engineer</option>
+                    <option value="UI/UX Designer">UI/UX Designer</option>
+                    <option value="Product Manager">Product Manager</option>
+                    <option value="QA Engineer">QA Engineer</option>
+                    <option value="Cloud Engineer">Cloud Engineer</option>
+                    <option value="Cybersecurity Analyst">Cybersecurity Analyst</option>
+                    <option value="Technical Writer">Technical Writer</option>
+                    <option value="Engineering Manager">Engineering Manager</option>
+                    <option value="Software Engineer">Software Engineer</option>
+                    <option value="iOS Developer">iOS Developer</option>
+                    <option value="Android Developer">Android Developer</option>
+                    <option value="Blockchain Developer">Blockchain Developer</option>
+                    <option value="Site Reliability Engineer">Site Reliability Engineer</option>
+                    <option value="Other">Other</option>
+                  </select>
                 </div>
                 <div>
                   <label htmlFor="reg-location" style={{ display: 'block', fontSize: 'var(--text-sm)', color: 'var(--color-text-secondary)', marginBottom: 'var(--space-2)' }}>Location</label>
-                  <input id="reg-location" type="text" value={formData.location} onChange={(e) => updateField('location', e.target.value)} placeholder="e.g. Lagos, Nigeria" />
+                  <select id="reg-location" value={formData.location} onChange={(e) => updateField('location', e.target.value)}>
+                    <option value="">Select your location</option>
+                    <option value="Lagos, Nigeria">Lagos, Nigeria</option>
+                    <option value="Abuja, Nigeria">Abuja, Nigeria</option>
+                    <option value="Port Harcourt, Nigeria">Port Harcourt, Nigeria</option>
+                    <option value="Accra, Ghana">Accra, Ghana</option>
+                    <option value="Nairobi, Kenya">Nairobi, Kenya</option>
+                    <option value="Cape Town, South Africa">Cape Town, South Africa</option>
+                    <option value="Johannesburg, South Africa">Johannesburg, South Africa</option>
+                    <option value="Kigali, Rwanda">Kigali, Rwanda</option>
+                    <option value="Cairo, Egypt">Cairo, Egypt</option>
+                    <option value="Kampala, Uganda">Kampala, Uganda</option>
+                    <option value="Dar es Salaam, Tanzania">Dar es Salaam, Tanzania</option>
+                    <option value="Addis Ababa, Ethiopia">Addis Ababa, Ethiopia</option>
+                    <option value="Casablanca, Morocco">Casablanca, Morocco</option>
+                    <option value="Dakar, Senegal">Dakar, Senegal</option>
+                    <option value="Lusaka, Zambia">Lusaka, Zambia</option>
+                    <option value="Remote - Africa">Remote - Africa</option>
+                    <option value="Remote - Worldwide">Remote - Worldwide</option>
+                    <option value="Other">Other</option>
+                  </select>
                 </div>
                 <div>
                   <label style={{ display: 'block', fontSize: 'var(--text-sm)', color: 'var(--color-text-secondary)', marginBottom: 'var(--space-2)' }}>Skills</label>
@@ -234,7 +277,24 @@ const RegisterForm = () => {
               <>
                 <div>
                   <label htmlFor="reg-industry" style={{ display: 'block', fontSize: 'var(--text-sm)', color: 'var(--color-text-secondary)', marginBottom: 'var(--space-2)' }}>Industry</label>
-                  <input id="reg-industry" type="text" value={formData.industry} onChange={(e) => updateField('industry', e.target.value)} placeholder="e.g. Fintech, SaaS" />
+                  <select id="reg-industry" value={formData.industry} onChange={(e) => updateField('industry', e.target.value)}>
+                    <option value="">Select industry</option>
+                    <option value="Technology">Technology</option>
+                    <option value="Fintech">Fintech</option>
+                    <option value="E-commerce">E-commerce</option>
+                    <option value="Healthtech">Healthtech</option>
+                    <option value="Edtech">Edtech</option>
+                    <option value="Agritech">Agritech</option>
+                    <option value="SaaS">SaaS</option>
+                    <option value="Logistics">Logistics</option>
+                    <option value="Telecommunications">Telecommunications</option>
+                    <option value="Media & Entertainment">Media & Entertainment</option>
+                    <option value="Consulting">Consulting</option>
+                    <option value="Cybersecurity">Cybersecurity</option>
+                    <option value="AI/ML">AI/ML</option>
+                    <option value="Blockchain/Web3">Blockchain/Web3</option>
+                    <option value="Other">Other</option>
+                  </select>
                 </div>
                 <div>
                   <label htmlFor="reg-website" style={{ display: 'block', fontSize: 'var(--text-sm)', color: 'var(--color-text-secondary)', marginBottom: 'var(--space-2)' }}>Website</label>
@@ -257,7 +317,21 @@ const RegisterForm = () => {
                 </div>
                 <div>
                   <label htmlFor="reg-comp-loc" style={{ display: 'block', fontSize: 'var(--text-sm)', color: 'var(--color-text-secondary)', marginBottom: 'var(--space-2)' }}>Location</label>
-                  <input id="reg-comp-loc" type="text" value={formData.location} onChange={(e) => updateField('location', e.target.value)} placeholder="e.g. Lagos, Nigeria" />
+                  <select id="reg-comp-loc" value={formData.location} onChange={(e) => updateField('location', e.target.value)}>
+                    <option value="">Select your location</option>
+                    <option value="Lagos, Nigeria">Lagos, Nigeria</option>
+                    <option value="Abuja, Nigeria">Abuja, Nigeria</option>
+                    <option value="Accra, Ghana">Accra, Ghana</option>
+                    <option value="Nairobi, Kenya">Nairobi, Kenya</option>
+                    <option value="Cape Town, South Africa">Cape Town, South Africa</option>
+                    <option value="Johannesburg, South Africa">Johannesburg, South Africa</option>
+                    <option value="Kigali, Rwanda">Kigali, Rwanda</option>
+                    <option value="Cairo, Egypt">Cairo, Egypt</option>
+                    <option value="Kampala, Uganda">Kampala, Uganda</option>
+                    <option value="Remote - Africa">Remote - Africa</option>
+                    <option value="Remote - Worldwide">Remote - Worldwide</option>
+                    <option value="Other">Other</option>
+                  </select>
                 </div>
               </>
             )}

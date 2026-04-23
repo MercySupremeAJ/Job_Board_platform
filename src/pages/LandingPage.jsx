@@ -59,7 +59,7 @@ const LandingPage = () => {
   const fallback = (variable, fallbackValue) => `var(${variable}, ${fallbackValue})`;
 
   return (
-    <div style={{ paddingTop: fallback('--navbar-height', '64px'), background: fallback('--color-bg', '#f9fafb'), minHeight: '100vh' }}>
+    <div style={{ paddingTop: fallback('--navbar-height', '64px'), background: fallback('--color-bg', '#0F0F23'), minHeight: '100vh', color: 'var(--color-text-primary, #F1F5F9)' }}>
       {/* ─── Hero Section ──────────────────────────────────── */}
       <section
         style={{
@@ -121,6 +121,7 @@ const LandingPage = () => {
               lineHeight: 'var(--line-height-tight)',
               marginBottom: 'var(--space-6)',
               animation: 'fadeInUp 0.7s ease-out',
+              color: 'var(--color-text-primary, #F1F5F9)',
             }}
           >
             Connect Africa's{' '}
@@ -228,7 +229,7 @@ const LandingPage = () => {
       <section style={{ padding: 'var(--space-24) var(--space-6)' }}>
         <div style={{ maxWidth: 'var(--max-content-width)', margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: 'var(--space-16)' }}>
-            <h2 style={{ fontSize: 'var(--text-4xl)', fontFamily: 'var(--font-display)', marginBottom: 'var(--space-4)' }}>
+            <h2 style={{ fontSize: 'var(--text-4xl)', fontFamily: 'var(--font-display)', marginBottom: 'var(--space-4)', color: 'var(--color-text-primary, #F1F5F9)' }}>
               Everything You Need to <span className="gradient-text">Succeed</span>
             </h2>
             <p style={{ color: 'var(--color-text-secondary)', maxWidth: '550px', margin: '0 auto', fontSize: 'var(--text-lg)' }}>
@@ -269,7 +270,7 @@ const LandingPage = () => {
                 >
                   {feature.icon}
                 </div>
-                <h3 style={{ fontSize: 'var(--text-xl)', marginBottom: 'var(--space-3)' }}>{feature.title}</h3>
+                <h3 style={{ fontSize: 'var(--text-xl)', marginBottom: 'var(--space-3)', color: 'var(--color-text-primary, #F1F5F9)' }}>{feature.title}</h3>
                 <p style={{ color: 'var(--color-text-secondary)', lineHeight: 'var(--line-height-relaxed)' }}>
                   {feature.description}
                 </p>
@@ -289,7 +290,7 @@ const LandingPage = () => {
       >
         <div style={{ maxWidth: 'var(--max-content-width)', margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: 'var(--space-12)' }}>
-            <h2 style={{ fontSize: 'var(--text-4xl)', fontFamily: 'var(--font-display)', marginBottom: 'var(--space-4)' }}>
+            <h2 style={{ fontSize: 'var(--text-4xl)', fontFamily: 'var(--font-display)', marginBottom: 'var(--space-4)', color: 'var(--color-text-primary, #F1F5F9)' }}>
               <span className="gradient-text-gold">Featured</span> Opportunities
             </h2>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: 'var(--text-lg)' }}>
@@ -337,6 +338,7 @@ const LandingPage = () => {
               fontSize: 'var(--text-4xl)',
               fontFamily: 'var(--font-display)',
               marginBottom: 'var(--space-6)',
+              color: 'var(--color-text-primary, #F1F5F9)',
             }}
           >
             Ready to Shape Africa's <span className="gradient-text">Tech Future</span>?
