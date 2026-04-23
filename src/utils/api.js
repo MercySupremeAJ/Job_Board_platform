@@ -128,7 +128,9 @@ export const loginApi = async (credentials) => {
     return simulateApiCall(safeUser, 800);
   }
 
-  return simulateApiCall(null, 800, true);
+  return simulateApiCall(null, 800, true).catch(() => {
+    throw new Error('Invalid email or password. Try using the demo buttons below.');
+  });
 };
 
 /**
