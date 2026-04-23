@@ -121,6 +121,7 @@ export const selectRole = (state) => state.auth.role;
 export const selectIsAuthenticated = (state) => state.auth.isAuthenticated;
 export const selectIsCandidate = (state) => state.auth.role === 'candidate';
 export const selectIsCompany = (state) => state.auth.role === 'company';
-export const selectSavedJobs = (state) => state.auth.user?.savedJobs || [];
+const EMPTY_SAVED_JOBS = [];
+export const selectSavedJobs = (state) => state.auth.user?.savedJobs ?? EMPTY_SAVED_JOBS;
 
 export default authSlice.reducer;

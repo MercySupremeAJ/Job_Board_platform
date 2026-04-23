@@ -36,8 +36,7 @@ const initialState = jobsAdapter.getInitialState({
 });
 
 // Pre-populate with all jobs
-const preloadedState = jobsAdapter.setAll(initialState, allInitialJobs);
-preloadedState.initialized = true;
+const preloadedState = { ...jobsAdapter.setAll(initialState, allInitialJobs), initialized: true };
 
 // Async thunks
 export const fetchJobs = createAsyncThunk(
