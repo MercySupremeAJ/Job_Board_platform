@@ -385,6 +385,8 @@ This project stands out because it:
 
 - GitHub: [@MercySupremeAJ](https://github.com/MercySupremeAJ)
 
+- Live link: https://job-board-platform-ruddy.vercel.app/ 
+
 ---
 
 ## 📄 License
